@@ -8,46 +8,6 @@ This project automates the provisioning of a multi-environment AWS infrastructur
 # Security Groups to control access
 # Remote State Storage using S3
 
-My project Folder structure looks like this:
-aws_network/
-│── 01-Networking/
-│   ├── main.tf  # VPC, subnets, NAT, IGW, Route Tables
-│   ├── variables.tf
-│   ├── outputs.tf
-│
-│── 02-VPC-Peering/
-│   ├── main.tf  # VPC Peering between dev and prod
-│   ├── variables.tf
-│   ├── outputs.tf
-
-lab4
-│── dev/
-|   |──network/
-|   |   │── main.tf
-│   │   ├── config.tf
-│   │   ├── variables.tf
-│   │   ├── outputs.tf
-│   ├── webservers/
-│   │   ├── main.tf  # Bastion Host, Web Servers in private subnet
-│   │   ├── config.tf
-│   │   ├── variables.tf
-│   │   ├── outputs.tf
-│   │   └── install_httpd.sh.tpl  # User data for web servers
-│
-│── prod/
-|   |──network/
-|   |   │── main.tf
-│   │   ├── config.tf
-│   │   ├── variables.tf
-│   │   ├── outputs.tf
-│   |
-|   ├── webservers/
-│   │   ├── main.tf  # Web Servers in private subnet (No Bastion)
-│   │   ├── config.tf
-│   │   ├── variables.tf
-│   │   ├── outputs.tf
-
-
 
 Prerequisites
 
